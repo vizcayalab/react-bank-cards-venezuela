@@ -1,24 +1,26 @@
-# React Credit Cards
+# React Credit Cards Venezuela
 
 [![NPM](https://badge.fury.io/js/react-credit-cards.svg)](https://www.npmjs.com/package/react-credit-cards) [![Travis](https://travis-ci.org/amarofashion/react-credit-cards.svg?branch=master)](https://travis-ci.org/amarofashion/react-credit-cards) [![Maintainability](https://api.codeclimate.com/v1/badges/bb0aa1a6b782c3845f6a/maintainability)](https://codeclimate.com/github/amarofashion/react-credit-cards/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/bb0aa1a6b782c3845f6a/test_coverage)](https://codeclimate.com/github/amarofashion/react-credit-cards/test_coverage)
 
+Fork from https://github.com/amarofashion/react-credit-cards 
 A slick credit card component for React.
+Feature 
+Only draw card and add logo from bank 
+Detecte BIN venezuela bank
 
-![demo](https://raw.githubusercontent.com/amarofashion/react-credit-cards/master/docs/media/rccs.gif)
 
-[Demo](https://amarofashion.github.io/react-credit-cards/)
 
 ### Install
 
 ```
-npm install --save react-credit-cards
+npm install --save react-bank-cards-venezuela
 ```
 
 ### Usage
 
 ```jsx
 import React from 'react';
-import Cards from 'react-credit-cards';
+import Cards from 'react-bank-cards-venezuela';
 
 export default class PaymentForm extends React.Component {
   state = {
@@ -49,29 +51,18 @@ export default class PaymentForm extends React.Component {
           name={this.state.name}
           number={this.state.number}
         />
-        <form>
-        	<input
-            type="tel"
-            name="number"
-            placeholder="Card Number"
-            onChange={this.handleInputChange}
-            onFocus={this.handleInputFocus}
-          />
-          ...
-        </form>
       </div>
     );
   }
 }
 ```
 
-Don't forget to import the `react-credit-cards/lib/styles.scss` if you are using SASS in your project.  
+Don't forget to import the `react-bank-cards-venezuela/lib/styles.scss` if you are using SASS in your project.  
 Or you can import the CSS:  
-`import 'react-credit-cards/es/styles-compiled.css';`
+`import 'react-bank-cards-venezuela/es/styles-compiled.css';`
 
 ### Features
 
-- We support all credit card issuers available in [Payment](https://github.com/jessepollak/payment) plus Hipercard (a brazilian credit card).
 
 ## Props
 
@@ -134,28 +125,18 @@ Or you can import the CSS:
 
 ## Development
 
-Here's how you can get started developing locally:
-
-    $ git clone https://github.com/amarofashion/react-credit-cards.git
-    $ cd react-credit-cards
-    $ npm install
-    $ npm start
-
-Now, if you go to `http://localhost:3000` in your browser, you should see the demo page.
+--coming!!
 
 ## Contributing
 
 Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process of contributing to the project.
 
 ## Useful links
+--coming!!
 
-[EBANK's test numbers](https://www.ebanx.com/business/en/developers/integrations/testing/credit-card-test-numbers)  
-[Adyen's test numbers](https://gist.github.com/j3j5/8b3e48ccad746b90a54a)  
-[Worldpay's test card numbers](https://support.worldpay.com/support/kb/bg/testandgolive/tgl5103.html)  
-[Brazilian cards patterns](https://github.com/erikhenrique/bin-cc/blob/master/README.md)
 
 ## LICENSE
 
 This project is licensed under the [MIT License](LICENSE.md).
 
-###### Made with ❤️ at [AMARO](https://amaro.com).
+###### Made Fork with ❤️ at  @vizcaya in Twitter
